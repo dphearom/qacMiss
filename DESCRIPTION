@@ -1,0 +1,11 @@
+Package: qacMiss
+Title: Identify and Impute Missing Values
+Version: 0.0.0.9000
+Authors@R: 
+    person("Robert", "Kabacoff", , "rkabacoff@wesleyan.edu", role = c("aut", "cre"))
+Description: Identify, summarize, visualize and impute missing data
+    in R data frames.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1

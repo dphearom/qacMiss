@@ -42,7 +42,8 @@ row_miss <- function(df){
                    y = cu),
                stat="Identity")+
      geom_line(aes(x= mydf,
-                   y = cu))+
+                   y = cu),
+               stat="Identity")+
      theme_minimal()+
      labs(
        title = "Missing Values per Case",

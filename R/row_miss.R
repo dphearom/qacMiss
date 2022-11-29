@@ -18,6 +18,7 @@
 
 
 row_miss <- function(df){
+  if(!any(is.na(df)))retun(cat("No missing data."))
    rn <- rownames(df)
    cn <- colnames(df)
    mydf <- data.frame()
@@ -31,14 +32,22 @@ row_miss <- function(df){
      mydf<- rbind(mydf, num)
    }
    mytable <- as.data.frame(table(mydf))
-   ggplot(mytable,
-          aes(x= mydf,
-              y = Freq))+
-     geom_bar(stat= "Identity",
+   mytable[, "cu"] <- cumsum(mytable$Freq)
+   ggplot(mytable)+
+     geom_bar(aes(x= mydf,
+                  y = Freq),
+              stat= "Identity",
               fill = "steelblue")+
+     geom_point(aes(x= mydf,
+                   y = cu),
+               stat="Identity")+
+     geom_line(aes(x= mydf,
+                   y = cu))+
      theme_minimal()+
      labs(
        title = "Missing Values per Case",
        x = "Number of Missing Values",
        y = "Number of Cases")
 }
+
+row_miss(sleep)

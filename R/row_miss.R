@@ -40,15 +40,18 @@ row_miss <- function(df){
               fill = "steelblue")+
      geom_point(aes(x= mydf,
                    y = cu),
-               stat="Identity")+
+               stat="Identity",
+               color = "lightgrey")+
      geom_line(aes(x= mydf,
-                   y = cu),
-               stat="Identity")+
+                   y = cu,
+                   group = 1),
+               stat="Identity",
+               linetype = "dashed",
+               color = "grey")+
      theme_minimal()+
      labs(
        title = "Missing Values per Case",
        x = "Number of Missing Values",
-       y = "Number of Cases")
+       y = "Number of Cases",
+       caption = "Line is cumulative frequency.")
 }
-
-row_miss(sleep)

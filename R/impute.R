@@ -14,6 +14,7 @@
 #'
 #' @param data data frame with missing values
 #' @param method method to be applied to impute the missing values
+#' @import missForest sjmisc VIM
 #'
 #' @return a new data frame where the missing value are estimated based on the specified method
 #'
@@ -26,7 +27,7 @@
 #'
 #' # if the specified method is not among the listed three, an error will be reported
 #' new_df <- impute(airquality, "randomforest")
-#'
+#' @export
 #'
 
 impute <- function(data, method = c("knn","missForest","mice")){

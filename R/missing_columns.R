@@ -4,6 +4,7 @@
 #' of missing variables by column
 #'
 #' @param x A dataframe
+#' @import ggplot2 dplyr
 #'
 #' @return ggplot bar plot, if no missing data returns a message
 #' @examples
@@ -21,13 +22,11 @@ plotMiss <- function(x){
   missing_df  = data.frame(missing_vals = columnSums,
                            total = len)
 
-  library(dplyr)
   missing_df = missing_df %>%
     mutate(proportion = 100*(missing_vals/total)) %>%
     arrange(desc(proportion))
   missing_df['vars'] = rownames(missing_df)
 
-  library(ggplot2)
   ggplot(missing_df, aes(y = proportion, x = reorder(vars, proportion))) +
     geom_bar(stat="identity", fill="cornflower blue") +
     coord_flip() +

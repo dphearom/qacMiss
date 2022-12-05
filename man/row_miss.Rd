@@ -16,9 +16,6 @@ bar chart of missing values per case
 This \code{row_miss} returns a bar chart that shows you the missing values per case.
 }
 \examples{
-\dontrun{
-library(VIM)
-data(sleep)
-row_miss(sleep)
-}
+data(mtcars2)
+row_miss(mtcars2)
 }

@@ -15,3 +15,6 @@ Imports:
     VIM,
     missForest,
     sjmisc
+Depends: 
+    R (>= 2.10)
+LazyData: true

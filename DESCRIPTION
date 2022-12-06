@@ -1,17 +1,32 @@
 Package: qacMiss
 Title: Identify and Impute Missing Values
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
-    person("Robert", "Kabacoff", , "rkabacoff@wesleyan.edu", role = c("aut", "cre"))
+   c(person(given = "Kabacoff",
+           family = "Robert",
+           role = c("aut", "cre"),
+           email = "rkabacoff@wesleyan.edu"),
+    person("Duong", "Rome", role = "ctb"),
+    person("Dutra", "Pedro", role = "ctb"),
+    person("Feuerman", "Remi Sloane", role = "ctb"),
+    person("Gao", "Calvin", role = "ctb"),
+    person("Morrill", "Luke Riley", role = "ctb"),
+    person("Smith", "Latonya Samoya", role = "ctb"),
+    person("Xu", "Christina", role = "ctb"),
+    person("Yuan", "Terry", role = "ctb")
+    )
 Description: Identify, summarize, visualize and impute missing data
     in R data frames.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.2
 Imports: 
     dplyr,
     ggplot2,
     VIM,
     missForest,
     sjmisc
+Depends: 
+    R (>= 2.10)
+LazyData: true

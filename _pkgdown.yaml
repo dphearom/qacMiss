@@ -1,0 +1,31 @@
+title: qacMiss
+url: http://rkabacoff.github.io/qacMiss
+template:
+  params:
+    bootswatch: cerulean
+reference:
+  - title: Functions
+    desc: ~
+    contents:
+      - '`col_miss`'
+      - '`row_miss`'
+      - '`impute`'
+  - title: Data sets
+    desc: ~
+    contents:
+      - '`mtcars2`'
+navbar:
+  type: inverse
+  left:
+    - icon: fa-home
+      href: index.html
+    - icon: fa-file-code-o
+      text: "Reference"
+      href: reference/index.html
+  right:
+    - icon: fas fa-chalkboard-teacher
+      text: QAC
+      href: https://www.wesleyan.edu/qac
+    - icon: fa-github fa-lg
+      text: "GitHub"
+      href: https://github.com/rkabacoff/qacMiss/

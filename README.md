@@ -1,24 +1,29 @@
-
 # qacMiss
 
+<img src="image.jpg" width="300"/>
 
-The goal of qacMiss is to identify, visualize, and impute
-missing data in R data frames.
+The goal of qacMiss is to identify, visualize, and impute missing data in R data frames. Imputation methods include kth nearest neighbor, random forest,
+and missing value imputation via chained equations (mice).
 
 ## Installation
 
 You can install the development version of qacMiss like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+if (!require("remotes")){
+  install.packages("remotes")
+}
+remotes::install_github("rkabacoff/qacMiss")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+The following code demonstrates the major functions:
 
 ``` r
-library(qacMiss)
 ## basic example code
+library(qacMiss)
+col_miss(mtcars2)
+row_miss(mtcars2)
+df_imputed <- impute(mtcars2)
 ```
-

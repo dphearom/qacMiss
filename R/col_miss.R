@@ -1,4 +1,4 @@
-#' plotMiss
+#' col_miss
 #'
 #' Plotting missing variables and displaying the proportion
 #' of missing variables by column
@@ -8,13 +8,11 @@
 #'
 #' @return ggplot bar plot, if no missing data returns a message
 #' @examples
-#' \dontrun{
-#' data(sleep, package = "VIM")
-#' plotMiss(sleep)
-#' }
+#' data(mtcars2)
+#' col_miss(mtcars2)
 #' @export
 #'
-plotMiss <- function(x){
+col_miss <- function(x){
   len = nrow(x)
   if(!any(is.na(x)))return(cat("No missing data"))
 

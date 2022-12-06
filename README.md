@@ -2,7 +2,8 @@
 
 <img src="image.jpg" width="300"/>
 
-The goal of qacMiss is to identify, visualize, and impute missing data in R data frames.
+The goal of qacMiss is to identify, visualize, and impute missing data in R data frames. Imputation methods include kth nearest neighbor, random forest,
+and missing value imputation via chained equations (mice).
 
 ## Installation
 

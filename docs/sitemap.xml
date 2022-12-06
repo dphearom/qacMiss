@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>http://rkabacoff.github.io/qacMiss/404.html</loc>
   </url>
   <url>
-    <loc>/authors.html</loc>
+    <loc>http://rkabacoff.github.io/qacMiss/authors.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
+    <loc>http://rkabacoff.github.io/qacMiss/index.html</loc>
   </url>
   <url>
-    <loc>/LICENSE-text.html</loc>
+    <loc>http://rkabacoff.github.io/qacMiss/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>/LICENSE.html</loc>
+    <loc>http://rkabacoff.github.io/qacMiss/LICENSE.html</loc>
   </url>
   <url>
-    <loc>/reference/col_miss.html</loc>
+    <loc>http://rkabacoff.github.io/qacMiss/reference/col_miss.html</loc>
   </url>
   <url>
-    <loc>/reference/impute.html</loc>
+    <loc>http://rkabacoff.github.io/qacMiss/reference/impute.html</loc>
   </url>
   <url>
-    <loc>/reference/index.html</loc>
+    <loc>http://rkabacoff.github.io/qacMiss/reference/index.html</loc>
   </url>
   <url>
-    <loc>/reference/mtcars2.html</loc>
+    <loc>http://rkabacoff.github.io/qacMiss/reference/mtcars2.html</loc>
   </url>
   <url>
-    <loc>/reference/row_miss.html</loc>
+    <loc>http://rkabacoff.github.io/qacMiss/reference/row_miss.html</loc>
   </url>
 </urlset>

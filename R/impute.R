@@ -14,7 +14,9 @@
 #'
 #' @param data data frame with missing values
 #' @param method method to be applied to impute the missing values
-#' @import missForest sjmisc VIM
+#' @importFrom missForest missForest
+#' @importFrom sjmisc merge_imputations
+#' @importFrom VIM kNN
 #'
 #' @return a new data frame where the missing value are estimated based on the specified method
 #'
